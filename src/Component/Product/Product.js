@@ -1,6 +1,5 @@
 import React from 'react';
 import './Product.css'
-
 const Product = (props) => {
     const {img, title, describe, age, time} = props.product;
     return (
@@ -18,5 +17,4 @@ const Product = (props) => {
         </div>
     );
 };
-
 export default Product;

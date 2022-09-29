@@ -6,7 +6,6 @@
     position: relative;
     background-color: white;
 }
-
 .product img{
     width: 286px;
     height: 200px;
@@ -21,7 +20,6 @@
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
 .product-name{
     font-family: 'Lato';
     font-style: normal;
