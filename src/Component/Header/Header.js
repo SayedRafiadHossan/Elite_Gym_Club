@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header.css'
 import logo from "../../images/gym-1.png"
-
 const Header = () => {
     return (
         <nav className='header'>
@@ -19,5 +18,4 @@ const Header = () => {
         </nav>
     );
 };
-
 export default Header;
