@@ -33,12 +33,12 @@
     margin-bottom: 20px;
     width: 80%;
     height: 30px;
-    background: #FFE0B3;
+    background: #3b82f6;
     border: none;
     border-radius: 8px 8px 8px 8px;
     position: absolute;
     bottom: 0;
 }
 .btn-cart:hover{
-    background-color: orange;
+    background-color: #10b981;
 }

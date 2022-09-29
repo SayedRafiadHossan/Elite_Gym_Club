@@ -1,4 +1,5 @@
 import React from 'react';
+import QNA from '../QNA/QNA';
 import './Cart.css'
 
 const Cart = () => {
@@ -31,19 +32,19 @@ const Cart = () => {
         <div>
             <h1 className='font-bold mx-10'>Add A Break</h1>
         <div className='bg-slate-100 flex mx-10 my-5 rounded-md'>
-        <div className='bg-white mx-3 my-2 rounded-full hover:bg-sky-700'>
+        <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
                 <p className='m-2'>10s</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-sky-700'>
+            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
                 <p className='m-2'>20s</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-sky-700'>
+            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
                 <p className='m-2'>30s</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-sky-700'>
+            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
                 <p className='m-2'>40s</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-sky-700'>
+            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
                 <p className='m-2'>50s</p>
             </div>
         </div>
@@ -63,10 +64,11 @@ const Cart = () => {
 
         {/* avtivity btn */}
 
+        <div>
         <button className='active-btn'>
             <p>Activity Completed</p>
         </button>
-    
+        </div>
         </nav>
 
     );

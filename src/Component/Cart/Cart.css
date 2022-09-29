@@ -1,14 +1,11 @@
 .active-btn{
-    /* margin-left: 60px; */
-    /* margin-bottom: 20px; */
     margin: 50px 0px 0px 40px;
-    width: 18%;
+    width: 80%;
     height: 40px;
-    background: #FFE0B3;
+    background: #3b82f6;
     border: none;
     border-radius: 8px 8px 8px 8px;
-    position: absolute;
 }
 .active-btn:hover{
-    background-color: orange;
+    background-color: #10b981;
 }
