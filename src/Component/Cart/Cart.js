@@ -1,5 +1,4 @@
 import React from 'react';
-import QNA from '../QNA/QNA';
 import './Cart.css'
 
 const Cart = () => {
