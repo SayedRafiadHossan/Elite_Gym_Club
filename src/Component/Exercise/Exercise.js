@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {addToDb, getStoredCart} from '../../Utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import Qna from '../Qna/Qna';
 import "./Exercise.css"
 
 const Exercise = () => {
@@ -43,30 +44,32 @@ const Exercise = () => {
             addToDb(selectedProduct.id)
         }
 
-        // const handleAddToCart = (product) => {
-        //     console.log(product);
-        // }
-
     return (
+        <nav>
         <div>
-         <div className='main-container'>
-            <div>
-                <h1 className='select-exercise'>Select today's exercise</h1>
+        <div className='main-container'>
+        <div>
+            <h1 className='select-exercise'>Select today's exercise</h1>
                 <div className="exercise-container">
-                    {
-                    exercises.map(exercise => <Product
-                        key={exercise.id}
-                        product={exercise}
-                        handleAddToCart={handleAddToCart}
-                        ></Product>)
-                    }
+                {
+                exercises.map(exercise => <Product
+                key={exercise.id}
+                product={exercise}
+                handleAddToCart={handleAddToCart}
+                ></Product>)
+                }
                 </div>
-            </div>
+        </div>
             <div className="cart-container">
                 <Cart cart={cart}></Cart>
             </div>
         </div>
         </div>
+        <div>
+            <Qna></Qna>
+        </div>
+        </nav>
+        
     );
 };
 
