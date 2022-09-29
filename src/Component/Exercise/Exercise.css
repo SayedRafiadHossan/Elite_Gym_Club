@@ -1,0 +1,22 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: rgb(226 232 240);
+}
+.cart-container{
+    background-color: white;
+}
+.exercise-container{
+    padding: 0px 100px 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+.select-exercise{
+    padding:  50px 100px 20px 100px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
