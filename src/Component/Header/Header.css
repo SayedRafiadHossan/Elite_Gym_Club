@@ -32,3 +32,10 @@
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
+
+@media only screen and (max-width: 640px) {
+    .header{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  }

@@ -20,3 +20,18 @@
     font-size: 21px;
     line-height: 25px;
 }
+@media only screen and (max-width: 640px) {
+    .product{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .main-container{
+        display: block;
+    }
+    .exercise-container{
+        display: block;
+        padding: 0px 10px 10px 10px;
+    }
+    
+  }
