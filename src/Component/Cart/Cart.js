@@ -1,7 +1,17 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = () => {
+const Cart = (props) => {
+    const breakTime = localStorage.getItem('breakTime');
+    const handleClickedValue = (e) => {
+        localStorage.setItem('breakTime', e.target.innerText);
+        document.getElementById("time").innerText = e.target.innerText
+    }
+    const {cart} = props;   
+    let total = 0;
+    for(const exercise of cart){
+        total = total + exercise.time;
+    }
     return (
         <nav>
         <div className='flex'>
@@ -31,20 +41,20 @@ const Cart = () => {
         <div>
             <h1 className='font-bold mx-10'>Add A Break</h1>
         <div className='bg-slate-100 flex mx-10 my-5 rounded-md'>
-        <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
-                <p className='m-2'>10s</p>
+        <div onClick={handleClickedValue} className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
+                <p className='m-2'>10</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
-                <p className='m-2'>20s</p>
+            <div onClick={handleClickedValue}  className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
+                <p className='m-2'>20</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
-                <p className='m-2'>30s</p>
+            <div onClick={handleClickedValue} className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
+                <p className='m-2'>30</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
-                <p className='m-2'>40s</p>
+            <div onClick={handleClickedValue} className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
+                <p className='m-2'>40</p>
             </div>
-            <div className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
-                <p className='m-2'>50s</p>
+            <div onClick={handleClickedValue} className='bg-white mx-3 my-2 rounded-full hover:bg-blue-500'>
+                <p className='m-2'>50</p>
             </div>
         </div>
         </div>
@@ -54,22 +64,24 @@ const Cart = () => {
         <div>
             <h1 className='font-bold mx-10'>Exercise Details</h1>
             <div className='bg-slate-100 mx-10 my-5  rounded-md '>
-                <p className='mx-5 p-2'>Exercise time: </p>
+                <p className='mx-5 p-2'>Exercise time: {total}</p>
             </div>
             <div className='bg-slate-100 mx-10  rounded-md'>
-                <p className='mx-5 p-2'>Break time: </p>
+                <p className='mx-5 p-2'>Break time: <span id='time'>{breakTime}</span></p>
             </div>
         </div>
 
-        {/* avtivity btn */}
+        {/* activity btn */}
 
         <div>
         <button className='active-btn'>
             <p>Activity Completed</p>
         </button>
         </div>
-        </nav>
 
+        {/* Toast */}
+        
+        </nav>
     );
 };
 
