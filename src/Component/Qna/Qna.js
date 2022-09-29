@@ -20,5 +20,4 @@ const Qna = () => {
         </div>
     );
 };
-
 export default Qna;

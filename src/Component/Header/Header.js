@@ -8,9 +8,9 @@ const Header = () => {
   <div class="container flex flex-wrap justify-between items-center mx-auto">
     <a href="#tt" class="flex items-center">
     <div className='header-right-site'>
-                <img src={logo} alt="" />
-                <h1 className='mt-2 font-bold'>Elite-Gym-Club</h1>
-            </div>
+        <img src={logo} alt="" />
+        <h1 className='mt-2 font-bold'>Elite-Gym-Club</h1>
+    </div>
     </a>
     <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500" aria-controls="navbar-solid-bg" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
