@@ -2,7 +2,7 @@ import React from 'react';
 
 const Qna = () => {
     return (
-        <div className='text-center mx-10 my-5'>
+        <div className='text-center mx-10 lg:my-5 my-0'>
             <h1 className='font-extrabold m-5 underline'>Frequently Question & Answer</h1>
             <div>
                 <h1 className='font-semibold'>1. What does React actually do?</h1>
